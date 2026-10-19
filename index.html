@@ -3,61 +3,251 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Chris Cartier</title>
-<meta name="description" content="Chris Cartier builds practical tools. Featured project: Hash Check.">
+<title>Chris Cartier | Real Estate, Life Insurance, SEO &amp; Bitcoin Consulting</title>
+<meta name="description" content="Chris Cartier, Lake Ariel, PA: independent sales rep, real estate agent, life insurance specialist, business SEO, property and account management, and Bitcoin and crypto consulting.">
+<meta name="author" content="Chris Cartier">
+<meta name="theme-color" content="#0f1115">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Ccircle cx=%2216%22 cy=%2216%22 r=%2216%22 fill=%22%23f7931a%22/%3E%3Ctext x=%2216%22 y=%2222%22 font-size=%2216%22 font-family=%22sans-serif%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%23111%22%3ECC%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://cartiercode.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Chris Cartier">
+<meta property="og:title" content="Chris Cartier">
+<meta property="og:description" content="Real estate, life insurance, business SEO, property management, and Bitcoin and crypto consulting from Lake Ariel, PA.">
+<meta property="og:url" content="https://cartiercode.github.io/">
+<meta property="og:image" content="https://cartiercode.github.io/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chris Cartier: real estate, life insurance, business SEO, property management, Bitcoin and crypto consulting">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Chris Cartier">
+<meta name="twitter:description" content="Real estate, life insurance, business SEO, property management, and Bitcoin and crypto consulting from Lake Ariel, PA.">
+<meta name="twitter:image" content="https://cartiercode.github.io/assets/og.png">
 <style>
-  :root { --bg:#0f1115; --card:#171a21; --text:#e8eaed; --muted:#9aa0a6; --accent:#f7931a; --line:#262a33; }
-  * { box-sizing:border-box; margin:0; }
+  :root { --bg:#0f1115; --card:#171a21; --card2:#1c2029; --text:#e8eaed; --muted:#a3a9b1; --accent:#f7931a; --line:#2a2f39; --r:14px; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
   body { background:var(--bg); color:var(--text); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
-  main { max-width:720px; margin:0 auto; padding:72px 24px 48px; }
-  h1 { font-size:2.4rem; line-height:1.15; letter-spacing:-.02em; }
-  h2 { font-size:.8rem; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); margin-bottom:16px; }
-  section { margin-top:56px; }
-  .bio { color:var(--muted); font-size:1.15rem; margin-top:16px; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:24px; }
-  .card h3 { font-size:1.35rem; }
-  .card p { color:var(--muted); margin:8px 0 20px; }
-  .links { display:flex; flex-wrap:wrap; gap:12px; }
-  a.btn { display:inline-block; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:600; border:1px solid var(--line); color:var(--text); }
-  a.btn.primary { background:var(--accent); border-color:var(--accent); color:#111; }
-  a.btn:hover { filter:brightness(1.1); }
-  a.btn:focus-visible, .contact a:focus-visible { outline:2px solid var(--accent); outline-offset:3px; }
-  .contact { display:flex; flex-wrap:wrap; gap:20px; }
-  .contact a { color:var(--text); text-decoration:none; border-bottom:1px solid var(--line); }
-  .contact a:hover { border-color:var(--accent); }
-  footer { margin-top:72px; color:var(--muted); font-size:.85rem; }
-  @media (max-width:480px){ main{padding:48px 20px 32px;} h1{font-size:2rem;} .links a.btn{flex:1; text-align:center;} }
+  a { color:var(--text); }
+  a:focus-visible, button:focus-visible { outline:2px solid var(--accent); outline-offset:3px; border-radius:6px; }
+  .visually-hidden { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+  .skip { position:absolute; left:-9999px; top:8px; background:var(--accent); color:#111; padding:8px 14px; border-radius:8px; font-weight:700; z-index:10; }
+  .skip:focus { left:8px; }
+  .wrap { max-width:880px; margin:0 auto; padding:0 20px; }
+
+  nav { position:sticky; top:0; z-index:5; background:rgba(15,17,21,.92); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  nav ul { list-style:none; display:flex; gap:18px; overflow-x:auto; padding:12px 20px; max-width:880px; margin:0 auto; scrollbar-width:none; }
+  nav ul::-webkit-scrollbar { display:none; }
+  nav a { color:var(--muted); text-decoration:none; font-size:.88rem; white-space:nowrap; }
+  nav a:hover { color:var(--text); }
+
+  .hero { padding:56px 0 24px; display:grid; gap:24px; }
+  .avatar { width:104px; height:104px; border-radius:50%; border:3px solid var(--accent); object-fit:cover; background:var(--card); }
+  h1 { font-size:2.3rem; line-height:1.1; letter-spacing:-.02em; }
+  .tagline { color:var(--muted); font-size:1.08rem; margin-top:10px; }
+  .tagline span { white-space:nowrap; }
+  .loc { color:var(--accent); font-size:.95rem; margin-top:8px; font-weight:600; }
+  .links { display:flex; flex-wrap:wrap; gap:12px; margin-top:20px; }
+  .btn { display:inline-flex; align-items:center; justify-content:center; min-height:44px; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:600; border:1px solid var(--line); color:var(--text); background:transparent; transition:filter .15s, border-color .15s; }
+  .btn.primary { background:var(--accent); border-color:var(--accent); color:#111; }
+  .btn:hover { filter:brightness(1.1); border-color:var(--accent); }
+  .btn.sm { min-height:40px; padding:8px 14px; font-size:.92rem; }
+
+  section { padding-top:56px; scroll-margin-top:56px; }
+  h2 { font-size:.8rem; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); margin-bottom:18px; }
+  h2::before { content:""; display:inline-block; width:18px; height:2px; background:var(--accent); vertical-align:middle; margin-right:10px; }
+  .lead { font-size:1.12rem; color:var(--text); max-width:62ch; }
+  .lead + .lead { margin-top:12px; color:var(--muted); font-size:1rem; }
+
+  .grid { display:grid; gap:14px; grid-template-columns:1fr; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:var(--r); padding:20px; }
+  .card h3 { font-size:1.1rem; line-height:1.3; }
+  .card p { color:var(--muted); margin-top:6px; font-size:.95rem; }
+  .card .links { margin-top:16px; }
+  .icon { display:inline-grid; place-items:center; width:36px; height:36px; border-radius:10px; background:rgba(247,147,26,.12); color:var(--accent); font-weight:700; margin-bottom:12px; font-size:1.05rem; }
+  .tag { display:inline-block; font-size:.75rem; color:var(--accent); border:1px solid rgba(247,147,26,.4); border-radius:999px; padding:2px 10px; margin-top:12px; }
+
+  .timeline { list-style:none; border-left:2px solid var(--line); margin-left:6px; }
+  .timeline li { position:relative; padding:0 0 26px 22px; }
+  .timeline li:last-child { padding-bottom:0; }
+  .timeline li::before { content:""; position:absolute; left:-7px; top:7px; width:12px; height:12px; border-radius:50%; background:var(--bg); border:2px solid var(--accent); }
+  .timeline li.now::before { background:var(--accent); }
+  .timeline h3 { font-size:1.05rem; }
+  .timeline .org { color:var(--text); }
+  .meta { color:var(--muted); font-size:.88rem; }
+  .timeline p { color:var(--muted); font-size:.95rem; margin-top:4px; }
+
+  .certs { list-style:none; display:grid; gap:10px; grid-template-columns:1fr; }
+  .certs li { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:12px 16px; display:flex; justify-content:space-between; gap:12px; align-items:baseline; }
+  .certs strong { font-weight:600; font-size:.97rem; }
+  .certs span { color:var(--muted); font-size:.85rem; text-align:right; }
+
+  .writing a.card { display:block; text-decoration:none; transition:border-color .15s; }
+  .writing a.card:hover { border-color:var(--accent); }
+  .writing .arrow { color:var(--accent); font-size:.88rem; font-weight:600; margin-top:10px; display:block; }
+
+  .small { display:grid; gap:14px; grid-template-columns:1fr; }
+  .small ul { list-style:none; display:grid; gap:10px; margin-top:8px; }
+  .small li { color:var(--muted); font-size:.93rem; }
+  .small li strong { color:var(--text); font-weight:600; }
+
+  .contact { display:flex; flex-wrap:wrap; gap:12px; }
+  footer { margin:64px 0 0; padding:24px 0 40px; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem; }
+
+  @media (min-width:640px) {
+    h1 { font-size:3rem; }
+    .hero { grid-template-columns:auto 1fr; align-items:center; gap:32px; padding-top:80px; }
+    .avatar { width:128px; height:128px; }
+    .grid.two, .certs, .small { grid-template-columns:1fr 1fr; }
+    .grid.three { grid-template-columns:repeat(2,1fr); }
+  }
+  @media (min-width:900px) { .grid.three { grid-template-columns:repeat(3,1fr); } .grid.svc { grid-template-columns:repeat(6,1fr); } .grid.svc > * { grid-column:span 2; } .grid.svc > :nth-child(n+4) { grid-column:span 3; } }
+  @media (max-width:420px) { .hero .links .btn { flex:1; } .certs li { flex-direction:column; gap:2px; } .certs span { text-align:left; } }
+  @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *, *::before, *::after { transition:none !important; animation:none !important; } }
 </style>
 </head>
 <body>
-<main>
-  <header>
-    <h1>Chris Cartier</h1>
-    <p class="bio">I build practical tools. Recently shipped Hash Check for the Colosseum Crypto World's Fair.</p>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Sections">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">What I do</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#writing">Writing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main id="main" class="wrap">
+  <header class="hero">
+    <img class="avatar" src="assets/chris.jpg" width="128" height="128" alt="Portrait of Chris Cartier">
+    <div>
+      <h1>Chris Cartier</h1>
+      <p class="tagline"><span>Independent Sales Rep</span> · <span>Life Insurance Agent</span> · <span>Business SEO Specialist</span> · <span>Property &amp; Account Management</span> · <span>Bitcoin &amp; Crypto Consulting</span></p>
+      <p class="loc">Lake Ariel, Pennsylvania</p>
+      <div class="links">
+        <a class="btn primary" href="https://www.linkedin.com/in/chris-cartier/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/cartiercode" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
   </header>
 
-  <section aria-labelledby="work">
-    <h2 id="work">Featured project</h2>
-    <article class="card">
-      <h3>Hash Check</h3>
-      <p>Health report for home Bitcoin miners (Bitaxe). Tracks wear, warranty, and pool contribution.</p>
-      <div class="links">
-        <a class="btn primary" href="https://hash-check.vercel.app" target="_blank" rel="noopener">Live demo</a>
-        <a class="btn" href="https://github.com/cartiercode/hash-check" target="_blank" rel="noopener">GitHub</a>
-      </div>
-    </article>
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About</h2>
+    <p class="lead">Hi, I'm Chris. I blend creativity, technology, and impact: technical problem solving, strategic relationship building, and community-focused work, fueled by a curiosity to learn and grow.</p>
+    <p class="lead">I find creative solutions, lead with empathy, and bring a strong foundation in collaboration and adaptability to every new opportunity that pushes boundaries and creates value.</p>
   </section>
 
-  <section aria-labelledby="contact">
-    <h2 id="contact">Contact</h2>
-    <div class="contact">
-      <a href="mailto:xcartier@mail.grokbot.com">xcartier@mail.grokbot.com</a>
-      <a href="https://github.com/cartiercode" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.linkedin.com/in/chris-cartier/" target="_blank" rel="noopener">LinkedIn</a>
+  <section id="services" aria-labelledby="services-h">
+    <h2 id="services-h">What I do</h2>
+    <div class="grid three svc">
+      <article class="card"><span class="icon" aria-hidden="true">⌂</span><h3>Real estate &amp; STR / vacation property management</h3><p>Residential and commercial listing agent, buyer's agent, relocation and REO field services, plus short-term rental and vacation property management.</p></article>
+      <article class="card"><span class="icon" aria-hidden="true">✚</span><h3>Life insurance</h3><p>Licensed life insurance specialist with Symmetry Financial Group.</p></article>
+      <article class="card"><span class="icon" aria-hidden="true">▤</span><h3>Property &amp; account management</h3><p>Portfolio management, tenant retention, collections, and lease renewals.</p></article>
+      <article class="card"><span class="icon" aria-hidden="true">↗</span><h3>Business SEO &amp; websites</h3><p>Business SEO specialist. See Projects below for sites and tools I have built.</p></article>
+      <article class="card"><span class="icon" aria-hidden="true">₿</span><h3>Bitcoin &amp; crypto consulting</h3><p>Bitcoin and crypto consulting, backed by Crypto Academy's Fundamentals of Bitcoin and Crypto certification.</p></article>
     </div>
   </section>
 
-  <footer>© 2026 Chris Cartier</footer>
+  <section id="projects" aria-labelledby="projects-h">
+    <h2 id="projects-h">Projects I've built</h2>
+    <div class="grid three">
+      <article class="card">
+        <h3>Hash Check</h3>
+        <p>Health report for home Bitcoin miners (Bitaxe). Tracks wear, warranty, and pool contribution.</p>
+        <div class="links">
+          <a class="btn primary sm" href="https://hash-check.vercel.app" target="_blank" rel="noopener">Live demo<span class="visually-hidden"> of Hash Check</span></a>
+          <a class="btn sm" href="https://github.com/cartiercode/hash-check" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Pocono Cabin &amp; Lake Services</h3>
+        <p>A directory of cabin and lake services in the Poconos.</p>
+        <div class="links">
+          <a class="btn primary sm" href="https://poconospros.com" target="_blank" rel="noopener">Visit poconospros.com</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Bug Safari | Daintree Rescue</h3>
+        <p>A board game my son and I created with the help of Grok AI.</p>
+        <span class="tag">Board game</span>
+      </article>
+    </div>
+  </section>
+
+  <section id="experience" aria-labelledby="experience-h">
+    <h2 id="experience-h">Experience</h2>
+    <ol class="timeline">
+      <li class="now"><h3>Real Estate Agent · <span class="org">Voro</span></h3><p class="meta">Mar 2026 – Present · Self-employed · Remote (NY)</p><p>Residential and commercial listing agent, buyer's agent, relocation and REO field services. STR and vacation property management.</p></li>
+      <li class="now"><h3>Life Insurance Specialist · <span class="org">Symmetry Financial Group</span></h3><p class="meta">Sep 2025 – Present · Self-employed · Remote</p></li>
+      <li><h3>Commercial Real Estate Advisor · <span class="org">eXp Commercial</span></h3><p class="meta">Nov 2023 – Apr 2025 · Self-employed · Remote</p></li>
+      <li><h3>Property Manager · <span class="org">Hudson Homes</span></h3><p class="meta">Jul 2022 – Nov 2024 · Remote (NY)</p><p>Portfolio management, tenant retention, collections and lease renewals.</p></li>
+      <li><h3>Customer Service Sales Specialist · <span class="org">Alto Music</span></h3><p class="meta">Feb 2015 – Oct 2024 · NYC metro</p></li>
+      <li><h3>Realtor · <span class="org">Keller Williams Realty</span></h3><p class="meta">Aug 2019 – Mar 2021 · Greater NYC</p></li>
+    </ol>
+  </section>
+
+  <section id="certifications" aria-labelledby="certifications-h">
+    <h2 id="certifications-h">Licenses &amp; certifications</h2>
+    <ul class="certs">
+      <li><strong>Life Insurance License</strong><span>XCEL · 2025</span></li>
+      <li><strong>Certified Advisor</strong><span>eXp Commercial · 2023</span></li>
+      <li><strong>Fundamentals of Bitcoin and Crypto</strong><span>Crypto Academy · 2022</span></li>
+      <li><strong>FAA Remote Pilot (Part 107 drone)</strong><span>2020</span></li>
+      <li><strong>e-PRO</strong><span>NAR · 2020</span></li>
+      <li><strong>Military Relocation Professional</strong><span>NAR · 2019</span></li>
+      <li><strong>Real Estate Sales Associate</strong><span>RealEstateU · 2018 · exp. Dec 2026</span></li>
+      <li><strong>Certified Audio Engineer</strong><span>Atlantic Cape CC · 2010</span></li>
+    </ul>
+  </section>
+
+  <section id="writing" class="writing" aria-labelledby="writing-h">
+    <h2 id="writing-h">Featured writing</h2>
+    <div class="grid two">
+      <a class="card" href="https://www.linkedin.com/feed/update/urn:li:activity:7465140835731566592/" target="_blank" rel="noopener">
+        <h3>The Truth About AD&amp;D Insurance</h3>
+        <span class="arrow">Read on LinkedIn →</span>
+      </a>
+      <a class="card" href="https://www.linkedin.com/pulse/understanding-mortgage-protection-insurance-essential-chris-cartier-qfvie/" target="_blank" rel="noopener">
+        <h3>Understanding Mortgage Protection Insurance: A Homeowner's Essential Guide</h3>
+        <span class="arrow">Read on LinkedIn →</span>
+      </a>
+    </div>
+  </section>
+
+  <section id="more" aria-labelledby="more-h">
+    <h2 id="more-h">Volunteer &amp; languages</h2>
+    <div class="small">
+      <div class="card">
+        <h3>Volunteer</h3>
+        <ul>
+          <li><strong>Americas Action Team Member, Liberland</strong> · Oct 2024 – Present. E-residency citizen; advocacy letters for diplomatic outreach.</li>
+          <li><strong>Game Tester, Decentral Games</strong> · Tested early metaverse casino games.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Languages</h3>
+        <ul>
+          <li><strong>English</strong> · Native</li>
+          <li><strong>French</strong> · Elementary</li>
+          <li><strong>Spanish</strong> · Elementary</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Contact</h2>
+    <p class="lead" style="margin-bottom:18px">The best way to reach me:</p>
+    <div class="contact">
+      <a class="btn primary" href="mailto:xcartier@mail.grokbot.com">xcartier@mail.grokbot.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/chris-cartier/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://github.com/cartiercode" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <footer>© 2026 Chris Cartier · Lake Ariel, PA</footer>
 </main>
 </body>
 </html>
